@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/jinboker/self-use#readme",
   "dependencies": {
-    "commander": "^3.0.2"
+    "commander": "^3.0.2",
+    "inquirer": "^7.0.0"
   },
   "devDependencies": {
     "@umijs/fabric": "^1.1.10",

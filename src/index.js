@@ -24,7 +24,7 @@ program
         ])
         .then(({ action }) => {
           if (action in addAction) {
-            console.log(`add ${action}`);
+            addAction[action]();
           }
         });
 
@@ -32,7 +32,7 @@ program
     }
 
     if (type in addAction) {
-      console.log(`add ${type}`);
+      addAction[type]();
       return;
     }
 

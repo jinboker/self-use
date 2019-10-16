@@ -39,4 +39,16 @@ program
     throw Error('请输入正确的type');
   });
 
+// 删除内容
+program
+  .command('del [type]')
+  .action(type => {
+    if (type in addAction) {
+      addAction[type]();
+      return;
+    }
+
+    throw Error('请输入正确的type');
+  });
+
 program.parse(process.argv);
